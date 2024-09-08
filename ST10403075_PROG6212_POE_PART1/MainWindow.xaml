@@ -10,12 +10,20 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-
+        
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="Auto"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
+
+        <Label Content="Supporting Documents:" Grid.Row="3" Grid.Column="0" VerticalAlignment="Center" Margin="5"/>
+        <Button Content="Upload Documents" Grid.Row="3" Grid.Column="1" Width="150" Margin="5"/>
+
+        <Label Content="Claim Status:" Grid.Row="4" Grid.Column="0" VerticalAlignment="Center" Margin="5"/>
+        <TextBox Name="ClaimStatus" Grid.Row="4" Grid.Column="1" Width="250" Margin="5" Padding="5" IsReadOnly="True" Text="Pending"/>
 
         <Label Content="Contract ID:" Grid.Row="0" Grid.Column="0" VerticalAlignment="Center" Margin="5"/>
         <TextBox Name="ContractID" Grid.Row="0" Grid.Column="1" Width="200" Margin="5" Padding="5"/>
