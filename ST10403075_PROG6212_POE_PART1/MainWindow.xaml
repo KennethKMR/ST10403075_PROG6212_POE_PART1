@@ -33,5 +33,10 @@
 
         <Label Content="Date:" Grid.Row="2" Grid.Column="0" VerticalAlignment="Center" Margin="5"/>
         <DatePicker Name="ClaimDate" Grid.Row="2" Grid.Column="1" Margin="5"/>
+
+        <StackPanel Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2" Orientation="Horizontal" HorizontalAlignment="Center" Margin="10">
+            <Button Content="Submit Claim" Width="120" Margin="10" Padding="5"/>
+            <Button Content="Reset" Width="120" Margin="10" Padding="5"/>
+        </StackPanel>
     </Grid>
 </Window>
